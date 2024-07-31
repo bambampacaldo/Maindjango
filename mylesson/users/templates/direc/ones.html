@@ -1,0 +1,14 @@
+{% extends "lay.html" %}
+
+{% block title %}
+    Home
+{% endblock %}
+
+{% block  content%}
+    <form action="/users/registers/" method="post">
+        {% csrf_token %}
+        {{ form }}
+        <button>subsmits</button>
+    </form>
+{% endblock  %}
+

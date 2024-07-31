@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static "css/style.css"%}">
+    <title>
+        {% block  title%}
+                Home
+        {% endblock  %}
+
+    </title>
+</head>
+<body>
+    <nav>
+        <a href="/">🏠</a> |
+        <a href="about/">😪</a> |
+        <a href="{% url "push:dise" %}">📰</a> |
+        <a href="{% url "uzers:registers" %}">🚪</a> |
+        <a href="{% url "uzers:login" %}">🔏</a>
+    </nav>
+    <main>
+        {% block  content%}
+        {% endblock  %}
+
+    </main>
+</body>
+</html>

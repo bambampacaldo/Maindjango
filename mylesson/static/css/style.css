@@ -1,0 +1,9 @@
+body{
+    color: black;
+
+}
+h1{
+    color: black;
+    font-size: large;
+    cursor: grab;
+}

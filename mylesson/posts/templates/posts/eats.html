@@ -1,0 +1,12 @@
+{% extends "lay.html" %}
+
+{% block title %}
+    {{dolls.title}}
+{% endblock %}
+
+{% block  content%}
+         <img src="{{dolls.banner.url}}" 
+         alt="{{dolls.title}}">
+        <p>{{dolls.body}}</p>
+        <p>{{dolls.date}}</p>
+{% endblock  %}

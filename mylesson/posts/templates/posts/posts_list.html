@@ -1,0 +1,21 @@
+{% extends "lay.html" %}
+
+{% block title %}
+    Posts
+{% endblock %}
+
+{% block  content%}
+    <section>
+        <h1>this is Posts html</h1>
+        {% for dis in dolls%}
+            <article class='dis'>
+                <a href="{% url 'push:pray' slug=dis.slug%}">
+                    <h1>{{dis.title}}</h1>
+                </a>
+                <p>{{dis.body}}</p>
+                <p>{{dis.date}}</p>
+            </article>
+        {% endfor %}
+    </section>
+{% endblock  %}
+

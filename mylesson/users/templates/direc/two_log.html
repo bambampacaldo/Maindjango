@@ -1,0 +1,15 @@
+{% extends "lay.html" %}
+
+{% block title %}
+    Log in 
+{% endblock %}
+
+{% block  content%}
+    <h1>User Login</h1>
+    <form action="/users/login/" method="post">
+        {% csrf_token %}
+        {{ form }}
+        <button>subsmit</button>
+    </form>
+{% endblock  %}
+
